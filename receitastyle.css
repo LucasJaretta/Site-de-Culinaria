@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte-culinaria';
+    src: url('./fonte/culinaria-fonte.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --font-titulo: 'fonte-culinaria';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to right, #3B9A3D, #FFFFFF, #A40000);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, #F2C14E, #F5A623);
+    min-height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1 {
+    color: #8E6347;
+    font-family: var(--font-titulo);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 1px 2px 0px rgba(142, 99, 71, 0.445);
+    font-weight: normal;
+}
+
+nav {
+    background-color: #F5A623;
+    padding: 10px;
+    text-align: center;
+} 
+
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8E6347;
+    font-family: var(--font-titulo);
+    font-size: 22px;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+nav >a:hover{
+    background-color: #F8EAB8;
+    color: #8E6347;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 10px;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h2 {
+    font-family: var(--font-titulo);
+    color: #8E6347;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: normal;
+    padding: 15px;
+    text-shadow: 1px 1px 0px rgba(142, 99, 71, 0.459);
+}
+
+ul {
+    list-style-position: inside;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: var(--font-titulo);
+}
+
+ol {
+    list-style-position: inside;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: var(--font-titulo);
+}
+
+ol ::marker{
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #0f4c81;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white;
+}
+
+img {
+    max-width: 600px; 
+    height: auto; 
+    display: block;
+    margin: auto;
+}
+
+audio {
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
